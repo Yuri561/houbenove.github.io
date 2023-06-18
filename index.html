@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" type="text/css" href="/styles.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <!---Hero section starts here-->
+        <div class="hero">
+            <nav>
+                <h2 class="logo">Portfo<span>lio</span></h2><br>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#our-services">Services</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <a href="#" class="btn">Subscribe</a>
+            </nav>
+            <div class="content">
+                <h4>Hello, my name is</h4>
+                <h1>Houbenove <span>Pierre-Louis</span></h1>
+                <h3>I'm a web Developer.</h3>
+                <div class="newsletter">
+                    <form>
+                        <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                        <input type="submit" name="submit" value="Lets Start">
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <!---about section will start here 
+        -->
+        <section class="about" id="about-me">
+            <div class="main">
+                <img src="img/me2.jpg">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h5>Developer & <span>Designer</span></h5>
+                    <p>Hello! My name is Houbenove Pierre-Louis, and I was born and raised in Marchand Dessalines, Haiti.
+                         Growing up in the United States, I always had a keen interest in coding and programming, 
+                         but it wasn't until recently that I truly immersed myself in this field. 
+                         I pursued my education in programming and successfully completed my studies, solidifying my passion for web development. 
+                        I am now dedicated to transforming ideas into functional and visually captivating websites,
+                        utilizing my programming skills and creative mindset. 
+                        I am excited to embark on this journey and make a meaningful impact in the digital world.
+                        I am looking to get into front-end web development.
+                        I can provide clean code and perfect design. I also make the website more & more interactive
+                        with web animations. I can provide a responsive design to make your website accessible to all users, regardless of their device.
+                    </p>
+                    <button type="button" id="contact-button">Let's Talk</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!---this is where Services start-->
+        <div class="service" id="our-services">
+            <div class="title">
+                <h2>Services</h2>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <i class="fas fa-bars"></i>
+
+                    <h5>Web Development</h5> 
+                    <div class="pra">
+                        <p>Turning ideas into digital reality, one line of code at a time</p>
+
+                        <p style="text-align: center;">
+                            <a class="button" href="#">Read More</a>
+                        </p>
+                    </div> 
+                </div>
+                <div class="card">
+                    <i class="fas fa-edit"></i>
+                    <h5>Content Creation</h5> 
+                    <div class="pra">
+                        <p>Specializing in blog posts, website copy, social media content that drive engagement and leave a lasting impact. Let's collaborate to bring your brand's message to life.</p>
+                        
+                        <p style="text-align: center;">
+                            <a class="button" href="#">Read More</a>
+                        </p>
+                    </div> 
+                </div>
+                
+                <div class="card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h5>UI/UX Design</h5> 
+                    <div class="pra">
+                        <p>Creating visually appealing and user-friendly interfaces</p>
+                        
+                        <p style="text-align: center;">
+                            <a class="button" href="#">Read More</a>
+                        </p>
+                    </div> 
+                </div>
+                
+
+            </div>
+        </div>
+        <!-----Contact Me section--->
+      <div class="contact-me">
+        <p>Let Me Make You A Beautiful Website</p>
+        <a class="button-two" href="#">Hire Me</a>
+      </div>  
+            <!--this is where the footer starts-->
+            <footer id="contact">
+    
+            <p>Houbenove Pierre-Louis</p>
+               <p>For more HTML and CSS please give me a call let's chat!</p> 
+               <p style="background-color:rgb(60, 255, 0);">tel: 862-849-1754</p>
+               <div class="contact-icons">
+                <a href="https://wa.me/8628491754"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:+18628491754"><i class="fas fa-phone"></i></a>
+            </footer>
+            
+            <script>
+                document.getElementById('contact-button').addEventListener('click', function(){
+                    // this will display my phone number 
+                    var phoneNumber = '862-849-1754';
+                    alert('Phone'+ phoneNumber);
+
+                    // this will scroll to the footer section 
+
+                    var footerSection = document.querySelector('footer');
+                    footerSection.scrollIntoView({ behavior: 'smooth'});
+                    
+        
+                });
+
+        
+            </script>
+    </body>
+</html>
